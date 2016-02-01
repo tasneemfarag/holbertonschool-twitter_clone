@@ -46,3 +46,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+li {
+    display: inline;
+}
+
+.menu{
+	float: right;
+}
+
+#column1{
+	    background-color: gray;
+}
+
+#column2{
+		 background-color: lightgrey;
+}
+
+
+}
+
+
