@@ -72,8 +72,11 @@ li {
 	float: left;
 } 
 .welcome {
-	position: fixed; 
-	 
+	position:fixed;
+     bottom:0;
+     right:0; 
+     background-color: pink;
+
 }
 
 
