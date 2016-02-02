@@ -83,37 +83,31 @@ nav{
 		float:left; 
 		 width:18%;
 		 display: block;
-		 margin-right: 5px;
+		 margin-right: 18px;
 		 
 }
 
 
 #column1{
-		/*display: block;*/
-	    background-color: lightgrey;
-	    border: 1px solid gray;
 	    float:left; 
 	    margin:0; 
 	    width:58%; 
-	    border-radius: 5px;
-	    padding: 5px;
+	    display: block;
 }
 
 #column2{
-		 float:left; 
-		 background-color: lightgrey;
-		 border: 1px solid gray;
+		 float:left;
 		 width:18%;"
 		 display: block;
 		 margin-left: 5px;
-		border-radius: 5px;
-		padding: 5px;
+		
+		
 } 
-.column4{
+#column4{
 	float:left; 
 		 width:78%;
 		 display: block;
-		 margin-right: 5px;
+		 margin-left: 11px;
 }
 .main-box{
 	     float:left; 
@@ -126,6 +120,16 @@ nav{
 		padding: 5px;
 }
 
+.main-box-list{
+	     float:left; 
+		 background-color: lightgrey;
+		 border: 1px solid gray;
+		 margin: 3px;
+		 width:25%;
+		 display: block; 
+		border-radius: 5px;
+		padding: 5px;
+}
 
 } 
 .article {
