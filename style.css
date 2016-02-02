@@ -79,22 +79,59 @@ nav{
     margin: 3px;
 }
 
+#column0{
+		float:left; 
+		 background-color: lightgrey;
+		 border: 1px solid gray;
+		 width:18%;"
+		 display: block;
+		 margin-right: 5px;
+		 border-radius: 5px;
+		 padding: 5px;
+}
+
+
 #column1{
-	    background-color: gray;
+		/*display: block;*/
+	    background-color: lightgrey;
+	    border: 1px solid gray;
+	    float:left; 
+	    margin:0; 
+	    width:58%; 
+	    border-radius: 5px;
+	    padding: 5px;
 }
 
 #column2{
+		 float:left; 
 		 background-color: lightgrey;
+		 border: 1px solid gray;
+		 width:18%;"
+		 display: block;
+		 margin-left: 5px;
+		border-radius: 5px;
+		padding: 5px;
+}
 }
 
 
 } 
-.articale {
+.article {
 
 } 
 .photo {
 	float: left;
+	height: 50px;
 } 
+
+.statusphoto {
+	height: 100px;
+} 
+
+.usertofollow{
+	overflow: hidden;
+}
+
 .welcome {
 	position:fixed;
      bottom:0;
