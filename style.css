@@ -81,13 +81,10 @@ nav{
 
 #column0{
 		float:left; 
-		 background-color: lightgrey;
-		 border: 1px solid gray;
-		 width:18%;"
+		 width:18%;
 		 display: block;
 		 margin-right: 5px;
-		 border-radius: 5px;
-		 padding: 5px;
+		 
 }
 
 
@@ -111,7 +108,22 @@ nav{
 		 margin-left: 5px;
 		border-radius: 5px;
 		padding: 5px;
+} 
+.column4{
+	float:left; 
+		 width:78%;
+		 display: block;
+		 margin-right: 5px;
 }
+.main-box{
+	     float:left; 
+		 background-color: lightgrey;
+		 border: 1px solid gray;
+		 margin-top: 5px;
+		 width:100%;
+		 display: block; 
+		border-radius: 5px;
+		padding: 5px;
 }
 
 
