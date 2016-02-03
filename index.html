@@ -6,96 +6,144 @@
     <meta name="description" content="Twitter Clone">
     <meta name="author" content="afrancisboeuf-tasneemfarag">
     <!-- CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body  bgcolor="#E6E6FA">
-    
-    <main class="container" width="992px" max-width="992px"  >
+
+<body >
+<!-- Container-->
+<main class="container" >
+
     <!-- Header-->
     <header>
-      <img src="https://raw.githubusercontent.com/afrancisboeuf/holbertonschool-higher-level_programming/master/newsletter/img/logo.png"  alt="" />
-      
-      <ul align="right" >
-        <li>  <a href="#" > Edit My profile </a> </li>
-        <li style="border-left: 2px solid black;">  <a href="#" > Logout </a> </li>
-        <!-- <li>  Sign In </li>  -->
-      </ul>
-      <!-- <div align="right">  <span> Edit My profile </span>  <span> Logout </span>   </div > -->
-    <div >  The Holberton Wall </div >
-     <nav>
-       <div class="menu" > Home </div >   <div class="menu"> My Status </div >  <div class="menu"> All Users </div >
-    </nav>
+        <img src="https://raw.githubusercontent.com/afrancisboeuf/holbertonschool-higher-level_programming/master/newsletter/img/logo.png"  alt="" height = "50px" />
+        
+        <ul align="right" >
+          <li>  <a href="#" > Edit My profile </a> </li>
+          <li style="border-left: 2px solid #6f747d;">  <a href="#" > Logout </a> </li>
+        </ul>
+      <div >  The Holberton Wall </div >
+       <nav>
+         <div  > <button class="menu"> Home </button> </div >   
+         <div > <button class="menu"> My Status </button> </div >  
+        <div > <button class="menu"> All Users </button></div >
+      </nav>
 
-  <!-- <div align="right">  <span> Home </span>  <span> My Status </span>  <span > All Users </span>   </div >  -->
-</header>
-<!--/ Header -->
+    </header>
+
 <br>
+
 <!-- Section -->
 <section>
-<!-- <div display="inline-block"  >  main </div >
-<div display="inline-block"  >  aside </div > -->
 <div style="margin:0px auto; width:100%">
-<div id="column1" style="float:left; margin:0; width:80%; ">
+
+
+<!-- column user profile -->
+<div id="column0" >
   
   
-  <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt="" class="photo" />
-  <p> name </p>
-  <p> date </p>
-  <article class="article">
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </article><br> 
+  
+  <div class="main-box">
+  <img src="img/betty.jpg"   alt=""  class="statusphoto" />
+  </div>
 
-  <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt="" class="photo" />
-  <p> name </p>
-  <p> date </p>
-  <article class="article">
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </article><br>
+  <div class="main-box">
+    <a class="name" href="#"> Betty  </a>
+    <p> full stack software engineer </p>
+  </div>
 
-  <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt="" class="photo" />
-  <p> name </p>
-  <p> date </p>
-  <article class="article">
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </article><br>
+</div>
+
+
+<!-- column content -->
+<div id="column1" >
+
+ <div class="main-box">
+    <img src="img/julien.jpg" alt="" class="photo" />
+    <p>  <a class="name" href="#"> Julien </a> - 1 min </p>
+    <article class="article">
+      Could Computer Coding Academies Ease the Student Loan Crisis? <a href="http://www.thestreet.com/story/13442929/1/could-computer-coding-academies-ease-the-student-loan-crisis.html"> http://www.thestreet.com/story/13442929 </a> @holbertonschool 
+    </article>
+  </div>
+
+  <div class="main-box">
+    <img src="img/rudy.png"  alt="" class="photo" />
+    <p>  <a class="name" href="#"> Rudy </a> - 12 h </p>
+    <article class="article">
+      "Lorem ipsum dolor sit amet, consectetur.
+    </article>
+  </div>
+
+   <div class="main-box">
+    <img src="img/sylvain.jpeg"  alt="" class="photo" />
+    <p>  <a class="name" href="#"> Sylvain  </a> - Jan 25 </p>
+    <article class="article">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+  </div>
+
+  <div class="main-box">
+    <img src="img/sophie.jpeg"  alt="" class="photo" />
+     <p>  <a class="name" href="#"> Sophie  </a> - Jan 24 </p>
+    <article class="article">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </article>
+  </div>
+
   
 </div>
 
 
+<!-- column aside -->
 <div id="column2" >
-  <div> new user to follow... <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt=""  class="photo" /> <p>name</p>
-   <p>Bio</p>
-  </div><br> 
 
+  <div class="main-box">
+     <div> <h1> Suggestion </h1> </div>
   
-  <div> new user to follow... <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt="" class="photo" /> <p>name</p>
-   <p>Bio</p>
-  </div> <br>
-
-  
-  <div> new user to follow... <img src="http://simpleicon.com/wp-content/uploads/user1.png"  alt="" class="photo" /> <p>name</p>
-   <p>Bio</p>
-  </div><br>
-
-  <div> 
-    <p>Trends</p>
-    <a href="">#holbertonschoole</a> <br>
-    <a href="">#holbertonschoole</a> <br>
-    <a href="">#holbertonschoole</a> <br>
-    <a href="">#holbertonschoole</a> <br> 
-
-
+     <div class="usertofollow">
+    <img src="img/rona.jpg"  alt=""  class="photo" /> 
+    <a class="name"  href="#">Rona</a>
+     <p>
+      Banal...
+     </p>
     </div>
+
+    <div class="usertofollow">
+    <img  src="img/steven.jpg" alt=""  class="photo" /> 
+    <a class="name"  href="#">Steven</a>
+     <p>software...</p>
+    </div>
+
+    
+     <div class="usertofollow">
+    <img src="img/sravanthi.jpg"  alt=""  class="photo" /> 
+    <a class="name" href="#">Sravanthi</a>
+     <p>Happy...</p>
+    </div>
+ 
+ </div>
+
+  <div class="main-box">
+    <p><h1> Trending </h1> </p>
+    <a href="">#soylent</a> <br>
+    <a href="">#holbertoners</a> <br>
+    <a href="">#pushups</a> <br>
+    <a href="">#music</a> <br> 
+  </div>
   
 </div>
+
+
 </div>
 </section>
-<!--/ Section -->
+
 <!-- Footer -->
 <footer>
   <p class="welcome"> Welcome this is our application in beta</p>
 </footer>
-<!--/ Footer -->
+
+
 </main>
 </body>
+
 </html>
+

@@ -50,10 +50,16 @@ table {
 
 /* our code : */
 
+
+body{
+	 background-color: #f5f8f9;
+}
+
 .container {
 	width: 992px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 992px;
 }
 
 li {
@@ -64,26 +70,72 @@ li {
 
 a{
 	text-decoration: none;
-    color: black;
+	color: #e63e33;
 }
+
+a:hover{
+	transition: all 2s ease-in;
+	moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+	text-decoration: underline;
+	background-color:#e63e33;
+	color:white;
+}
+
+a:link{
+	transition: all 2s ease-in;
+	moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    -webkit-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+	text-decoration: underline;
+	color:#e63e33;
+	text-decoration: none;
+}
+
 
 nav{
 	overflow: hidden;
 	margin-right: 250px;
 }
+
 .menu{
 	float: right;
 	padding: 5px;
-    background-color: yellow;
-    border: 1px solid black;
+    
+    border: 1px solid e2e8ed;
     margin: 3px;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #575a62;
+    background: -webkit-linear-gradient(#575a62, #dedfe3);
+    background: -o-linear-gradient(#575a62, #dedfe3);  
+    background: -moz-linear-gradient(#575a62, #dedfe3); 
+    background: linear-gradient(#575a62, #dedfe3); 
+}
+.menu:hover{
+
+	background: #dedfe3;
+    background: -webkit-linear-gradient(#dedfe3, #575a62);
+    background: -o-linear-gradient(#dedfe3, #575a62);  
+    background: -moz-linear-gradient(#dedfe3, #575a62); 
+    background: linear-gradient(#dedfe3, #575a62); 
+}
+.menu:active{
+	background: #575a62;
+}
+
+button:focus {
+	outline:0;
 }
 
 #column0{
 		float:left; 
 		 width:18%;
 		 display: block;
-		 margin-right: 18px;
+		 margin-right: 15px;
 		 
 }
 
@@ -99,7 +151,7 @@ nav{
 		 float:left;
 		 width:18%;"
 		 display: block;
-		 margin-left: 5px;
+		 margin-left: 15px;
 		
 		
 } 
@@ -107,52 +159,66 @@ nav{
 	float:left; 
 		 width:78%;
 		 display: block;
-		 margin-left: 11px;
+		 margin-left: 15px;
 }
+
 .main-box{
-	     float:left; 
-		 background-color: lightgrey;
-		 border: 1px solid gray;
-		 margin-top: 5px;
-		 width:100%;
+		 background-color: #ffffff;
+		 border: 1px solid #e2e8ed;
+		 margin-top: 10px;
 		 display: block; 
 		border-radius: 5px;
 		padding: 5px;
+		color: #6f747d;
+		  overflow: hidden;
 }
 
 .main-box-list{
 	     float:left; 
-		 background-color: lightgrey;
+		 background-color: #ffffff;
 		 border: 1px solid gray;
 		 margin: 3px;
 		 width:25%;
 		 display: block; 
 		border-radius: 5px;
 		padding: 5px;
+		color: #6f747d;
+		    overflow: hidden;
 }
 
 } 
 .article {
 
 } 
+
 .photo {
 	float: left;
-	height: 50px;
+	height: 60px;
+	padding-right: 10px;
 } 
 
+.name{
+	font-weight: bold;
+}
+
 .statusphoto {
-	height: 100px;
+	height: 167px;
 } 
 
 .usertofollow{
 	overflow: hidden;
+	margin: 5px;
+	padding: 3px;
 }
 
 .welcome {
 	position:fixed;
      bottom:0;
      right:0; 
-     background-color: pink;
+     color:white;
+     background-color: #9297a4;
+      padding: 4px;
+      border-radius: 2px;
 
 }
 
