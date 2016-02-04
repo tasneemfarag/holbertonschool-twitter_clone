@@ -181,14 +181,15 @@ button:focus {
 		  margin-right: 2px;
 }
 
-} 
-.article {
-
-} 
 
 .photo {
 	float: left;
 	height: 60px;
+	padding-right: 10px;
+} 
+
+.octopus {
+	float: left;
 	padding-right: 10px;
 } 
 
