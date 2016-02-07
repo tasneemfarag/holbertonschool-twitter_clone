@@ -51,26 +51,27 @@ table {
 /* our code : */
 
 
-body{
-	 background-color: #f5f8f9;
-}
-
 .container {
+	background-color: #f5f8f9;
 	width: 992px;
     margin-left: auto;
     margin-right: auto;
     max-width: 992px;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.35;
 }
 
 li {
-    display: inline;
+   display: inline;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 a{
 	text-decoration: none;
-	color: #e63e33;
+	color: #44a4ee;
 }
 
 a:hover{
@@ -80,7 +81,7 @@ a:hover{
     -webkit-transition: all 2s ease-in;
     transition: all 2s ease-in;
 	text-decoration: underline;
-	background-color:#e63e33;
+	background-color:#44a4ee;
 	color:white;
 }
 
@@ -91,7 +92,7 @@ a:link{
     -webkit-transition: all 2s ease-in;
     transition: all 2s ease-in;
 	text-decoration: underline;
-	color:#e63e33;
+	color:#44a4ee;
 	text-decoration: none;
 }
 
@@ -101,84 +102,135 @@ nav{
 	margin-right: 250px;
 }
 
+
+.upper-nav{
+	   text-align: right;
+	   padding-right: 10px;
+}
+
+.menunbar{
+	background-color: #f5f8f9;
+	overflow: hidden;
+}
+
+
+.tagline{
+	float: left;
+	padding: 5px;
+	font-size: 125%;
+	font-weight: 400;
+}
+
+
 .menu{
 	float: right;
 	padding: 5px;
-    
-    border: 1px solid e2e8ed;
-    margin: 3px;
-    color: #ffffff;
-    border-radius: 5px;
-    background: #575a62;
-    background: -webkit-linear-gradient(#575a62, #dedfe3);
-    background: -o-linear-gradient(#575a62, #dedfe3);  
-    background: -moz-linear-gradient(#575a62, #dedfe3); 
-    background: linear-gradient(#575a62, #dedfe3); 
 }
-.menu:hover{
 
+
+
+.follow{
+	float: right;
+	padding: 5px;
+    border: 0px solid #fffff;
+    margin: 3px;
+    color: #44a4ee;
+    border-radius: 5px;
+    background: #f5f8f9;
+    background: -webkit-linear-gradient(#f5f8f9, #dedfe3);
+    background: -o-linear-gradient(#f5f8f9, #dedfe3);  
+    background: -moz-linear-gradient(#f5f8f9, #dedfe3); 
+    background: linear-gradient(#f5f8f9, #dedfe3); 
+}
+.follow:hover{
 	background: #dedfe3;
-    background: -webkit-linear-gradient(#dedfe3, #575a62);
-    background: -o-linear-gradient(#dedfe3, #575a62);  
-    background: -moz-linear-gradient(#dedfe3, #575a62); 
-    background: linear-gradient(#dedfe3, #575a62); 
+    background: -webkit-linear-gradient(#dedfe3, #f5f8f9);
+    background: -o-linear-gradient(#dedfe3, #f5f8f9);  
+    background: -moz-linear-gradient(#dedfe3, #f5f8f9); 
+    background: linear-gradient(#dedfe3, #f5f8f9); 
 }
-.menu:active{
-	background: #575a62;
+.follow:active{
+	background: #f5f8f9;
 }
+
+
+.menu-item{
+	border-radius: 5px;
+	padding: 5px;
+    background: #f5f8f9;
+    box-shadow: 1px 2px 1px #44a4ee;
+}
+
+
+
 
 button:focus {
 	outline:0;
 }
 
-#column0{
-		float:left; 
+
+.columnProfile{
 		 width:18%;
 		 display: block;
 		 margin-right: 15px;
-		 
 }
 
-
-#column1{
-	    float:left; 
+.columnFeed{
+	    
 	    margin:0; 
-	    width:58%; 
+	    width:68%; 
 	    display: block;
 }
 
-#column2{
-		 float:left;
-		 width:18%;"
+
+.columnAside{
+		 width:30%;"
 		 display: block;
-		 margin-left: 15px;
-		
-		
+		 /*margin-left: 15px;	*/
 } 
-#column4{
-	float:left; 
-		 width:78%;
-		 display: block;
-		 margin-left: 15px;
+
+
+.menu-box{
+	 	background-color: #ffffff;
+		border: 1px solid #e2e8ed;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		display: block; 
+		border-radius: 5px;
+		padding: 10px;
+		padding-top: 15px;
+		color: #6f747d;
+		overflow: hidden;
 }
+
+
+.header-box{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block; 
+		border-radius: 5px;
+		color: #6f747d;
+		overflow: hidden;
+}
+
 
 .main-box{
 		 background-color: #ffffff;
 		 border: 1px solid #e2e8ed;
-		 margin-top: 10px;
+		 margin-top: 3px;
 		 display: block; 
 		border-radius: 5px;
 		padding: 5px;
 		color: #6f747d;
-		  overflow: hidden;
+		 overflow: hidden;
 }
 
 .list{
 	     
-		  float:left; 
-		  width:30%;
-		  margin-left: 2px;
-		  margin-right: 2px;
+	float:left; 
+	width:47%;
+	 margin-left: 2px;
+    margin-right: 2px;
 }
 
 
@@ -188,17 +240,13 @@ button:focus {
 	padding-right: 10px;
 } 
 
-.octopus {
-	float: left;
-	padding-right: 10px;
-} 
 
 .name{
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .statusphoto {
-	height: 167px;
+	height: 285px
 } 
 
 .usertofollow{
@@ -212,10 +260,19 @@ button:focus {
      bottom:0;
      right:0; 
      color:white;
-     background-color: #9297a4;
-      padding: 4px;
-      border-radius: 2px;
+     background-color: #bdc3d2;
+     padding: 4px;
+     border-radius: 2px;
 
 }
 
+.youtube {
+	float: left;
+	padding-right: 10px;
+} 
+
+.youtube-comment{
+
+}
+ 
 
