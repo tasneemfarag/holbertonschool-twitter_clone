@@ -50,6 +50,11 @@ table {
 
 /* our code : */
 
+body {
+	 height:100%;
+	 width:100%;
+	background-color: #f5f8f9;
+}
 
 .container {
 	background-color: #f5f8f9;
@@ -63,13 +68,8 @@ table {
     line-height: 1.35;
 }
 
-li {
-   display: inline;
-    padding-left: 5px;
-    padding-right: 5px;
-}
 
-a{
+/*a{
 	text-decoration: none;
 	color: #44a4ee;
 }
@@ -83,17 +83,23 @@ a:hover{
 	text-decoration: underline;
 	background-color:#44a4ee;
 	color:white;
+}*/
+
+
+a{
+	text-decoration: none;
+	color: #44a4ee;
+	transition: all 2s ease;
+	moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
-a:link{
-	transition: all 2s ease-in;
-	moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in;
-    -webkit-transition: all 2s ease-in;
-    transition: all 2s ease-in;
+a:hover{
 	text-decoration: underline;
-	color:#44a4ee;
-	text-decoration: none;
+	background-color:#44a4ee;
+	color:white;
 }
 
 
@@ -108,10 +114,17 @@ nav{
 	   padding-right: 10px;
 }
 
+
 .menunbar{
 	background-color: #f5f8f9;
 	overflow: hidden;
 }
+
+li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 
 .tagline{
@@ -125,6 +138,22 @@ nav{
 .menu{
 	float: right;
 	padding: 5px;
+}
+
+.menu-float{
+	float: right;
+}
+
+.menu-inline{
+	display: inline;
+}
+
+
+.menu-item{
+	border-radius: 5px;
+	padding: 5px;
+    background: #f5f8f9;
+    box-shadow: 1px 2px 1px #44a4ee;
 }
 
 
@@ -154,12 +183,6 @@ nav{
 }
 
 
-.menu-item{
-	border-radius: 5px;
-	padding: 5px;
-    background: #f5f8f9;
-    box-shadow: 1px 2px 1px #44a4ee;
-}
 
 
 
