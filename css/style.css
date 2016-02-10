@@ -192,13 +192,13 @@ button:focus {
 		 display: block;	
 } 
 
+.columnLeft{
+	float:left;
+} 
 
 .columnRight{
 	float:right;
 } 
-
-
-
 
 .menu-box{
 	 	background-color: #ffffff;
@@ -266,7 +266,7 @@ button:focus {
 }
 
 .welcome {
-	position:fixed;
+	 position:fixed;
      bottom:0;
      right:0; 
      color:white;
@@ -285,23 +285,16 @@ button:focus {
 
 }
  
-@media only screen and (max-width: 768px) {
-    body {
-        /*background-color: red;*/
-    }
+@media only screen and (max-width: 992px) {
     .top-menu{
 		float: none;
 	}
 	.columnAside{
 		float: none;
 	}
-	.welcome{
-		position: static;
-	}
 	.columnRight{
 		float:none;
-	} 
-
+	}
 	.container {
 	    margin-left: 15px;
 	    margin-right: 15px;
@@ -315,9 +308,25 @@ button:focus {
 	.columnAside{
 		width:100%;
 	} 
+	.welcome{
+		position: static;
+	}
 }
 
 @media only screen and (min-width: 768px) {
+	
+	 .bottom-box{
+	 	 width: 31%;
+	 	 display: inline-block;
+	     vertical-align: top;
+	     padding: 0px;
+	     margin: 0px;
+	     margin-top: 3px;
+	 }
+	     
+}
+
+@media only screen and (min-width: 992px) {
 	.container {
 	    width: 992px;
 	}
@@ -330,6 +339,12 @@ button:focus {
 	.columnAside{
 		width:30%;
 	} 
+	.bottom-box{
+		width: 100%;
+		 display: block;
+	}
+
 }
 	
+
 
