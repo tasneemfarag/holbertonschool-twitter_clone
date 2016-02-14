@@ -116,14 +116,7 @@ li {
 }
 
 
-.menu{
-	float: right;
-	padding: 5px;
-}
 
-.menu-float{
-	float: right;
-}
 
 .menu-inline{
 	display: inline;
@@ -285,6 +278,49 @@ button:focus {
 
 }
  
+
+.toggle-nav {
+    display:none;
+}
+
+/* navigation menu */
+
+.menu{
+	float: right;
+	padding: 5px;
+}
+
+.menu-float{
+	float: right;
+}
+
+#nav-button{
+	padding: 5px;
+	float: right;
+}
+
+.menu-mobile{
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+	.menu, .top-menu {
+			display: none; 
+	    	
+	}
+	.nav-show .menu, .nav-show  .top-menu  {
+	    display: block;
+	}
+
+	.menu-float{
+		float: none;
+		
+	}
+}
+
 @media only screen and (max-width: 992px) {
     .top-menu{
 		float: none;
@@ -315,6 +351,10 @@ button:focus {
 
 @media only screen and (min-width: 768px) {
 	
+	#nav-button {
+	    display: none; 
+	}
+
 	 .bottom-box{
 	 	 width: 31%;
 	 	 display: inline-block;
@@ -324,7 +364,13 @@ button:focus {
 	     margin-top: 3px;
 	 }
 	     
+	.profile-box{
+		width: 47%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
+
 
 @media only screen and (min-width: 992px) {
 	.container {
@@ -341,10 +387,16 @@ button:focus {
 	} 
 	.bottom-box{
 		width: 100%;
-		 display: block;
+		display: block;
+	}
+	.profile-box{
+		width: 100%;
+		display: block;
 	}
 
 }
 	
+
+
 
 
