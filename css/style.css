@@ -319,6 +319,12 @@ button:focus {
 		float: none;
 		
 	}
+
+/*	.nav-show > .menu-float{
+		background: red;
+	}*/
+	li{
+	}
 }
 
 @media only screen and (max-width: 992px) {
