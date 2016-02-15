@@ -95,7 +95,7 @@ nav{
 }
 
 .top-menu{
-	float: right;
+/*	float: right;*/
 }
 
 .menunbar{
@@ -109,7 +109,7 @@ li {
 }
 
 .tagline{
-	float: left;
+/*	float: left;*/
 	padding: 5px;
 	font-size: 125%;
 	font-weight: 400;
@@ -173,7 +173,6 @@ button:focus {
 }
 
 .columnFeed{
-	    
 	    margin:0; 
 	    width:68%; 
 	    display: block;
@@ -186,11 +185,13 @@ button:focus {
 } 
 
 .columnLeft{
-	float:left;
+	/*float:left;*/
+	display: table-cell;
 } 
 
 .columnRight{
-	float:right;
+	/*float:right;*/
+	display: table-cell;
 } 
 
 .menu-box{
@@ -286,24 +287,43 @@ button:focus {
 /* navigation menu */
 
 .menu{
-	float: right;
+/*	float: right;*/
 	padding: 5px;
 }
 
 .menu-float{
-	float: right;
+/*	float: right;*/
 }
 
 #nav-button{
 	padding: 5px;
-	float: right;
+/*	float: right;*/
 }
 
 .menu-mobile{
 
 }
 
+.table{
+	display: table;
+    width: 100%;
+}
 
+.table-row{
+	display: table-row;
+}
+
+.table-cell{
+	display: table-cell;
+}
+
+.column{
+	display: table-cell;
+}
+
+.bottom-box{
+    display: table-cell;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -315,10 +335,14 @@ button:focus {
 	    display: block;
 	}
 
-	.menu-float{
-		float: none;
-		
-	}
+	.column{
+        display: block;
+    }
+
+    .bottom-box{
+     display: block;
+    }
+
 
 /*	.nav-show > .menu-float{
 		background: red;
@@ -329,14 +353,11 @@ button:focus {
 
 @media only screen and (max-width: 992px) {
     .top-menu{
-		float: none;
+/*		float: none;*/
 	}
-	.columnAside{
-		float: none;
-	}
-	.columnRight{
-		float:none;
-	}
+	.column{
+        display: block;
+    }
 	.container {
 	    margin-left: 15px;
 	    margin-right: 15px;
