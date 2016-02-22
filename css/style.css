@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,9 +48,12 @@ table {
 	border-spacing: 0;
 }
 
+/* OUR CODE : */
 
-/* our code : */
 
+
+
+/* main  */
 body {
 	 height:100%;
 	 width:100%;
@@ -83,6 +87,9 @@ a:hover{
 }
 
 
+
+/* Top / menu */
+
 nav{
 	overflow: hidden;
 	margin-right: 250px;
@@ -92,10 +99,8 @@ nav{
 .upper-nav{
 	   text-align: right;
 	   padding-right: 10px;
-}
-
-.top-menu{
-	float: right;
+	   display: flex;
+       justify-content: space-between;
 }
 
 .menunbar{
@@ -109,19 +114,14 @@ li {
 }
 
 .tagline{
-	float: left;
 	padding: 5px;
 	font-size: 125%;
 	font-weight: 400;
 }
 
-
-
-
 .menu-inline{
 	display: inline;
 }
-
 
 .menu-item{
 	border-radius: 5px;
@@ -130,36 +130,40 @@ li {
     box-shadow: 1px 2px 1px #44a4ee;
 }
 
+.header-box{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: block; 
+		border-radius: 5px;
+		color: #6f747d;
+		overflow: hidden;
+}
 
-
-.follow{
-	float: right;
+.menu{
+	 display: flex;
 	padding: 5px;
-    border: 0px solid #fffff;
-    margin: 3px;
-    color: #44a4ee;
-    border-radius: 5px;
-    background: #f5f8f9;
-    background: -webkit-linear-gradient(#f5f8f9, #dedfe3);
-    background: -o-linear-gradient(#f5f8f9, #dedfe3);  
-    background: -moz-linear-gradient(#f5f8f9, #dedfe3); 
-    background: linear-gradient(#f5f8f9, #dedfe3); 
 }
-.follow:hover{
-	background: #dedfe3;
-    background: -webkit-linear-gradient(#dedfe3, #f5f8f9);
-    background: -o-linear-gradient(#dedfe3, #f5f8f9);  
-    background: -moz-linear-gradient(#dedfe3, #f5f8f9); 
-    background: linear-gradient(#dedfe3, #f5f8f9); 
+
+
+#nav-button{
+	padding: 5px;
 }
-.follow:active{
-	background: #f5f8f9;
+
+.menu-mobile{
+
+}
+
+.wrapList{
+	display: flex;
+	flex-wrap:wrap;
 }
 
 
 
 
 
+
+/*STRUCTURE */
 
 button:focus {
 	outline:0;
@@ -185,13 +189,6 @@ button:focus {
 		 display: block;	
 } 
 
-.columnLeft{
-	float:left;
-} 
-
-.columnRight{
-	float:right;
-} 
 
 .menu-box{
 	 	background-color: #ffffff;
@@ -204,17 +201,12 @@ button:focus {
 		padding-top: 15px;
 		color: #6f747d;
 		overflow: hidden;
+
+		display: flex;
+    	justify-content: space-between;
 }
 
 
-.header-box{
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: block; 
-		border-radius: 5px;
-		color: #6f747d;
-		overflow: hidden;
-}
 
 
 .main-box{
@@ -228,9 +220,36 @@ button:focus {
 		 overflow: hidden;
 }
 
+
+
+/* MAIN CONTENT */
+
+
+.follow{
+	padding: 5px;
+    border: 0px solid #fffff;
+    margin: 3px;
+    color: #44a4ee;
+    border-radius: 5px;
+    background: #f5f8f9;
+    background: -webkit-linear-gradient(#f5f8f9, #dedfe3);
+    background: -o-linear-gradient(#f5f8f9, #dedfe3);  
+    background: -moz-linear-gradient(#f5f8f9, #dedfe3); 
+    background: linear-gradient(#f5f8f9, #dedfe3); 
+}
+.follow:hover{
+	background: #dedfe3;
+    background: -webkit-linear-gradient(#dedfe3, #f5f8f9);
+    background: -o-linear-gradient(#dedfe3, #f5f8f9);  
+    background: -moz-linear-gradient(#dedfe3, #f5f8f9); 
+    background: linear-gradient(#dedfe3, #f5f8f9); 
+}
+.follow:active{
+	background: #f5f8f9;
+}
+
+
 .list{
-	     
-	float:left; 
 	width:47%;
 	 margin-left: 2px;
     margin-right: 2px;
@@ -256,6 +275,11 @@ button:focus {
 	overflow: hidden;
 	margin: 5px;
 	padding: 3px;
+} 
+
+.btn-follow {
+	display: flex;
+    justify-content: flex-end;
 }
 
 .welcome {
@@ -283,27 +307,8 @@ button:focus {
     display:none;
 }
 
-/* navigation menu */
 
-.menu{
-	float: right;
-	padding: 5px;
-}
-
-.menu-float{
-	float: right;
-}
-
-#nav-button{
-	padding: 5px;
-	float: right;
-}
-
-.menu-mobile{
-
-}
-
-
+/*MEDIA QUERIES : */
 
 @media only screen and (max-width: 768px) {
 
@@ -314,29 +319,10 @@ button:focus {
 	.nav-show .menu, .nav-show  .top-menu  {
 	    display: block;
 	}
-
-	.menu-float{
-		float: none;
-		
-	}
-
-/*	.nav-show > .menu-float{
-		background: red;
-	}*/
-	li{
-	}
 }
 
 @media only screen and (max-width: 992px) {
-    .top-menu{
-		float: none;
-	}
-	.columnAside{
-		float: none;
-	}
-	.columnRight{
-		float:none;
-	}
+
 	.container {
 	    margin-left: 15px;
 	    margin-right: 15px;
@@ -398,6 +384,11 @@ button:focus {
 	.profile-box{
 		width: 100%;
 		display: block;
+	}
+
+	.columnContent{
+		display: flex;
+		justify-content:space-between;
 	}
 
 }
