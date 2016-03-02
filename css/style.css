@@ -393,7 +393,9 @@ button:focus {
 
 }
 	
-
+#form-post {
+	display: none;
+}
 
 
 
