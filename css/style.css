@@ -210,17 +210,24 @@ button:focus {
 
 
 .main-box{
-		 background-color: #ffffff;
-		 border: 1px solid #e2e8ed;
-		 margin-top: 3px;
-		 display: block; 
+		background-color: #ffffff;
+		border: 1px solid #e2e8ed;
+		margin-top: 3px;
+		display: block; 
 		border-radius: 5px;
 		padding: 5px;
 		color: #6f747d;
-		 overflow: hidden;
+		overflow: hidden;
 }
 
+.status-box{    
+	display: flex;
+	flex-direction: column;
+}
 
+.status-reply{
+	display: none;
+}
 
 /* MAIN CONTENT */
 

@@ -14,8 +14,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500italic,700italic,900,400italic,300italic,300' rel='stylesheet' type='text/css'>
 
      <!-- Javascript-->
-    <script src="behavior.js"></script>
+    <script src="js/behavior.js"></script>
     <script src="js/post_a_status.js"></script>
+    <script src="js/reply.js"></script>
 
     <!-- Open Graph (for social media) -->
     <meta property="og:title" content="The Impossible Octopus Fitness Wall | Impossible Octopus Fitness" />
@@ -84,55 +85,107 @@
 <!-- column content -->
 <div class="columnFeed columnLeft" >
 
- <div class="main-box">
-    <img src="img/julien.jpg" alt="" class="photo" />
-    <p>  <a class="name" href="#"> Julien Barbier</a> - 1 min </p>
-    <p class="article">
-      This Tweet is so funny <a href="https://twitter.com/octopus_fitness/status/696119360419553280"> https://twitter.com/octopus_fitness </a> #impossibleoctopus
-    </p>
-  </div>
 
-  <div class="main-box">
-    <img src="img/rudy.png"  alt="" class="photo" />
+   <div class="main-box">
+      <a  href="#" id="link-post" > Post a status </a> 
+      <br> 
+      <br>
+      <form action="action_page.php" method="get" id="form-post">
+        <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+        </textarea>
+
+        <input type="checkbox" name="location" value="location">include location
+        <br><br>
+        <input type="submit" value="Post">
+      </form>
+  </div>  
+
+ <div class="main-box status-box">
+    <div class="main-box-content">
+      <img src="img/julien.jpg" alt="" class="photo" />
+      <p>  <a class="name" href="#"> Julien Barbier</a> - 1 min </p>
+      <p class="article">
+        This Tweet is so funny <a href="https://twitter.com/octopus_fitness/status/696119360419553280"> https://twitter.com/octopus_fitness </a> #impossibleoctopus
+      </p>
+    </div>
+    <div class="main-box-reaction">
+       <a  href="#"   class="link-reply"  id="link-reply-1" > Reply </a> 
+        <form action="action_page.php" method="get" class="status-reply"  id="status-reply-1">
+          <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+          </textarea>
+
+          <input type="checkbox" name="location" value="location">include location
+          <br><br>
+          <input type="submit" value="Post">
+        </form>
+    </div>
+  </div>
+   
+
+  <div class="main-box status-box">
+    <div class="main-box-content">
+      <img src="img/rudy.png"  alt="" class="photo" />
     <p>  <a class="name" href="#"> Rudy Rigot </a> - 12 h </p>
     <p class="article">
        This Tweet is so funny <a href="https://twitter.com/octopus_fitness/status/696119360419553280"> https://twitter.com/octopus_fitness </a> #impossibleoctopus
     </p>
+    </div>
+    <div class="main-box-reaction">
+       <a  href="#"  class="link-reply" id="link-reply-2" > Reply </a> 
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-2">
+          <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+          </textarea>
+
+          <input type="checkbox" name="location" value="location">include location
+          <br><br>
+          <input type="submit" value="Post">
+        </form>
+    </div>
   </div>
 
-   <div class="main-box">
-    <img src="img/sylvain.jpeg"  alt="" class="photo" />
+
+  <div class="main-box status-box">
+    <div class="main-box-content">
+       <img src="img/sylvain.jpeg"  alt="" class="photo" />
     <p>  <a class="name" href="#"> Sylvain Kalache </a> - Jan 25 </p>
     <p class="article">
        WOW! so trending <a href="http://impossibleoctopus.tumblr.com/post/138821243924/impossible-octopus-fitness"> https://twitter.com/octopus_fitness </a> #impossibleoctopus
     </p>
+    </div>
+    <div class="main-box-reaction">
+       <a  href="#" class="link-reply" id="link-reply-3" > Reply </a> 
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-3">
+          <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+          </textarea>
+
+          <input type="checkbox" name="location" value="location">include location
+          <br><br>
+          <input type="submit" value="Post">
+        </form>
+    </div>
   </div>
 
-  <div class="main-box">
-    <img src="img/sophie.jpeg"  alt="" class="photo" />
-     <p>  <a class="name" href="#"> Sophie Barbier </a> - Jan 24 </p>
-    <p class="article">
-      The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other.The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other.The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other #impossibleoctopus <a href="https://octopus-fitness-impossible.github.io/impossible-octopus-fitness/impossible-octopus-fitness.html"> http://impossibleoctopus.tumblr.com </a> 
-    </p>
-  </div>
-  
 
-  <div class="main-box">
-  <a  href="#" id="link-post" > Post a status </a> <br> <br>
-<form action="action_page.php" method="get" id="form-post">
-  
-  <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
-  
-  </textarea>
-  <input type="checkbox" name="location" value="location">include location
+  <div class="main-box status-box">
+    <div class="main-box-content">
+        <img src="img/sophie.jpeg"  alt="" class="photo" />
+       <p>  <a class="name" href="#"> Sophie Barbier </a> - Jan 24 </p>
+      <p class="article">
+        The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other.The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other.The Impossible Octopus Fitness Wall is a group of fit octopuses trying to share their best practices each other #impossibleoctopus <a href="https://octopus-fitness-impossible.github.io/impossible-octopus-fitness/impossible-octopus-fitness.html"> http://impossibleoctopus.tumblr.com </a> 
+      </p>
+    </div>
+    <div class="main-box-reaction">
+       <a  href="#" class="link-reply" id="link-reply-4" > Reply </a> 
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-4">
+          <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+          </textarea>
 
-  <br><br>
-  <input type="submit" value="Post">
-
-</form>
-
+          <input type="checkbox" name="location" value="location">include location
+          <br><br>
+          <input type="submit" value="Post">
+        </form>
+    </div>
   </div>  
-
   
 </div>
 
