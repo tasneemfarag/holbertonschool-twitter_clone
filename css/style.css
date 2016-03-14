@@ -314,6 +314,32 @@ button:focus {
     display:none;
 }
 
+/* sticky smart header: */
+
+
+/*header {
+	top: 0px;
+	position: fixed;
+	width: 992px;
+	background-color: #f5f8f9;
+}
+
+.columnContent{
+	margin-top: 200px;
+}
+*/
+
+
+#mapContainer {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background: grey;
+}
+
+
 
 /*MEDIA QUERIES : */
 
