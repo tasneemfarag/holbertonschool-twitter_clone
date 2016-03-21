@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		xhttp.open("GET", "/statuses-1.html", true);
 		xhttp.send();
 		*/
-		console.log("new");
 		
 		ajaxGet("/statuses-1.html", function(string) { 
 			document.getElementById("more-status-inject").innerHTML = string ;
