@@ -1,0 +1,19 @@
+Total", "Time To First Byte", "DOM Content Loading", "DOM Processing"
+
+(disable cache)
+1.  983ms, 24ms, 541ms, 917ms,
+2. 	867ms, 35ms, 478ms, 760ms,
+3.	1174ms, 34ms, 671ms, 1044ms,
+4.	866ms, 31ms, 483ms, 773ms,
+5.	848ms, 29ms, 458ms, 765ms,
+
+average: 947ms, 30ms, 526ms, 852ms
+
+(enable cache)
+1.	840ms, 22ms, 158ms, 771ms,
+2.	850ms, 17ms, 214ms, 780ms
+3.	1016ms, 22ms, 209ms, 932ms,
+4.	991ms, 19ms, 235ms 915ms, 
+5.	786ms, 18ms, 367ms, 717ms
+
+average: 897ms, 20ms, 237ms, 823ms

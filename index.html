@@ -15,12 +15,7 @@
 
      <!-- Javascript-->
      <script src="js/behavior.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/post_a_status.js"></script>
-    <script src="js/reply.js"></script>
-    <script src="js/load_more.js"></script>
-    <script src="js/ajax.js"></script>
-    <script src="js/weather.js"></script>
+     <!-- <script  src="js/handlebars-v4.0.5.js" /> </script> -->
 
     <!-- Open Graph (for social media) -->
     <meta property="og:title" content="The Impossible Octopus Fitness Wall | Impossible Octopus Fitness" />
@@ -104,7 +99,38 @@
       </form>
   </div>  
 
- <div class="main-box status-box">
+  <!--
+   <script id="handlebars-test" type="text/x-handlebars-template">​
+      <link rel="stylesheet" href="css/style.css">
+
+       {{#each this}} ​
+       <div class="main-box status-box">
+          <div class="main-box-content">
+            <img src="{{image_path}}"  alt="" class="photo" />
+          <p>  <a class="name" href="#"> {{name}}  </a> - {{date}}  </p>
+          <p class="article">
+             {{post}}
+          </p>
+          </div>
+          <div class="main-box-reaction">
+             <a  href="#"  class="link-reply" id="link-reply-{{number}}" > Reply </a> 
+              <form action="action_page.php" method="get" class="status-reply" id="status-reply-{{number}}">
+                <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
+                </textarea>
+                <input type="checkbox" name="location" value="location">include location
+                <br><br>
+                <input type="submit" value="Post">
+              </form>
+          </div>
+        </div>
+        {{/each}}
+
+    ​</script>
+  -->
+
+
+
+  <div class="main-box status-box">
     <div class="main-box-content">
       <img src="img/julien.jpg" alt="" class="photo" />
       <p>  <a class="name" href="#"> Julien Barbier</a> - 1 min </p>
@@ -202,7 +228,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#"   class="link-reply"  id="link-reply-4" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply"  id="status-reply-0">
+        <form action="action_page.php" method="get" class="status-reply"  id="status-reply-4">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -224,7 +250,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#"  class="link-reply" id="link-reply-5" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply" id="status-reply-1">
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-5">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -246,7 +272,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#" class="link-reply" id="link-reply-6" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply" id="status-reply-2">
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-6">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -268,7 +294,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#" class="link-reply" id="link-reply-7" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply" id="status-reply-3">
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-7">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -290,7 +316,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#"   class="link-reply"  id="link-reply-8" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply"  id="status-reply-0">
+        <form action="action_page.php" method="get" class="status-reply"  id="status-reply-8">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -312,7 +338,7 @@
     </div>
     <div class="main-box-reaction">
        <a  href="#"  class="link-reply" id="link-reply-9" > Reply </a> 
-        <form action="action_page.php" method="get" class="status-reply" id="status-reply-1">
+        <form action="action_page.php" method="get" class="status-reply" id="status-reply-9">
           <textarea name="post" rows="10" cols="70" placeholder="Write your post..." >
           </textarea>
 
@@ -321,7 +347,7 @@
           <input type="submit" value="Post">
         </form>
     </div>
-  </div>
+  </div> 
   
   <div id="more-status-inject"></div>
 
@@ -401,11 +427,19 @@
 
 </div >
 
-
-
 </div >
+
+<script src="js/toggle.js"></script>
+<script src="js/post_a_status.js"></script>
+<script src="js/reply.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/load_more.js"></script>
+<script src="js/weather.js"></script>
+<!-- <script src="js/handlebars-test.js"></script> -->
 
 </body>
 
 </html>
+
+
 

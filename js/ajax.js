@@ -1,4 +1,5 @@
 
+// factorizing ajax function
 ajaxGet = function(url, onSuccess){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
@@ -7,6 +8,7 @@ ajaxGet = function(url, onSuccess){
 	}
 	};
 	xhttp.open("GET", url , true);
+	// creating a wait button
     document.getElementById("more-status-btn").disabled = true;
     document.getElementById("more-status-btn").style.cursor = "wait";
     document.getElementById("more-status-btn").style.color = "grey";
