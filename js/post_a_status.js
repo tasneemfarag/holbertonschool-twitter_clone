@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
+   document.getElementById("form-post").style.display = 'none';
+
 
    var lp = document.getElementById("link-post").addEventListener("click", displayPost);
 
