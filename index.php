@@ -1,3 +1,33 @@
+<?php
+
+  $login = $_POST["login"];
+  $password = $_POST["password"];
+
+$users = [
+    array("id" => 1, "login" => "user1", "password" => "password1", "full_name" => "User 1"),
+    array("id" => 2, "login" => "user2", "password" => "password2", "full_name" => "User 2"),
+    array("id" => 3, "login" => "user3", "password" => "password3", "full_name" => "User 3"),
+  ];
+
+//check if login exists and if it does it will return the id and if it doesn't it will return -1
+function userExists($login, $password, $users){
+  
+      
+      foreach ($users as &$elem) {
+      if ($elem["login"] == $login && $elem["password"] == $password ){
+       return $elem["id"];} 
+
+   
+      }
+
+     return -1; 
+    
+}
+
+
+      ?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -52,6 +82,27 @@
           <ul class="top-menu" >
             <li  class= "menu-inline" >  <a href="#" > Edit My profile </a> </li>
             <li  class= "menu-inline" style="border-left: 1px solid #44a4ee">  <a href="#" > Logout </a> </li>
+            <i> <?php 
+            
+            if (empty($login) || empty($password)){
+        echo 'Hello, there!';
+        }else {    $exist = userExists($login, $password, $users); 
+                if ($exist < 0){
+                    echo '<br>Hello, there!'; 
+                    echo "<br><font color='red'>Invalid credentials</font>";
+                } else {
+                  echo '<br>Hello ' . $users[$exist -1]["full_name"] . '!';
+                }
+
+                 
+                
+                echo '<br> Your rot13’d login is: ' . str_rot13 ( $login );
+               
+                echo ' <br>The length of your login is: ' . strlen($login);;
+      }
+             
+
+             ?></i>
           </ul>
 
         </div >
@@ -65,6 +116,7 @@
                 <button id="nav-button">  Menu </button>
 
                  <ul  class= "menu" >
+                 
                   <li  >  <a href="index.html" class= "menu-item" > Home </a> </li>
                   <li  >  <a href="user.html" class= "menu-item" > My Status </a>  </li>
                   <li  >  <a href="userslist.html" class= "menu-item" > All Users </a>  </li>
@@ -89,6 +141,12 @@
       <a  href="#" id="link-post" > Post a status </a> 
       <br> 
       <br>
+     
+
+
+ 
+
+
       <form action="action_page.php" method="get" id="form-post">
        
          <label for="textarea00"></label>
