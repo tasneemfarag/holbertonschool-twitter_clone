@@ -92,14 +92,9 @@ function userExists($login, $password, $users){
                     echo "<br><font color='red'>Invalid credentials</font>";
                 } else {
                   echo '<br>Hello ' . $users[$exist -1]["full_name"] . '!';
-                }
-
-                 
-                
-                echo '<br> Your rot13’d login is: ' . str_rot13 ( $login );
-               
-                echo ' <br>The length of your login is: ' . strlen($login);;
-      }
+                  echo '<br> Your rot13’d login is: ' . str_rot13 ( $login );
+                  echo ' <br>The length of your login is: ' . strlen($login);;
+      }}
              
 
              ?></i>
