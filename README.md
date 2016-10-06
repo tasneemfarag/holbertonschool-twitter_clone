@@ -1,4 +1,4 @@
-#  Twitter Clone 0.1.0 at Holberton School Read me 
+#  Twitter Clone 0.1.0 Read me 
 
 Twitter Clone  by Augustin Francis-Boeuf ( https://github.com/afrancisboeuf ) and Tasneem Farag (https://github.com/tasneemfarag) .
 
