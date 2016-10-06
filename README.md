@@ -2,6 +2,7 @@
 
 Twitter Clone  by Augustin Francis-Boeuf ( https://github.com/afrancisboeuf ) and Tasneem Farag (https://github.com/tasneemfarag) .
 
+Demo: http://tasneem.site/twitter_clone/
 
 ## Introduction
 
